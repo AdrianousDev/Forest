@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <title>Forest</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-verde-800 text-white">
+
+  <div class="container mb-10 flex gap-0.5 text-verde-200 *:py-3 *:px-6 *:bg-verde-900 mt-5 text-xl font-light">
+    <div class="rounded-l-[10px] relative flex items-center">
+      Segunda
+      <span class="size-3 bg-verde-200 rounded-full absolute block -left-1 shadow-2xl shadow-verde-400"></span>
+    </div>
+    <div>28º</div>
+    <div class="rounded-r-[10px]">🌤️</div>
+  </div>
+
+  <header class="container mb-8 flex justify-between items-center text-white">
+    <a href="#"><img src="img/forest.svg" alt="forest"></a>
+    <ul class="flex gap-10 *:*:text-2xl text-gray-200">
+      <li><a href="#" class="hover:underline underline-offset-8 p-4">Acomodações</a></li>
+      <li><a href="#" class="hover:underline underline-offset-8 p-4">Eventos</a></li>
+      <li><a href="#" class="hover:underline underline-offset-8 p-4">Experiências</a></li>
+      <li><a href="#" class="hover:underline underline-offset-8 p-4">Contato</a></li>
+    </ul>
+  </header>
+
+  <section class="container flex flex-col justify-end h-[600px] bg-[url('./img/floresta.jpg')] rounded-2xl bg-center bg-cover p-8 mb-10">
+    <div class="flex self-start items-center gap-10 py-2 px-3 rounded-full bg-verde-950 mb-10">
+      <span class="ml-2">vagas para dezembro abertas</span>
+      <a href="" class="flex gap-2 py-3 px-6 bg-gradient-to-b from-verde-200 to-verde-400 text-1xl text-verde-900 rounded-3xl">Reserve Hoje <img src="img/seta.svg" alt=""> </a>
+    </div>
+    <div class="w-[58ch] ">
+      <h2 class="text-6xl font-serif break-words mb-10">Venha Experimentar a Vida na Floresta</h2>
+    </div>
+    <div class="flex justify-between items-end">
+      <p>Melhores locais para visitar <a href="#" class="underline p-1">2049</a></p>
+      <div class="flex flex-col">
+        <div class="mb-2 uppercase text-2xl font-thin">
+          <p>Recomendado por</p>
+        </div>
+        <div class="flex gap-10 items-center justify-center">
+          <img src="img/parceiros/wildbeast.svg" alt="wildbeast" class="w-40">
+          <p class="flex items-center text-xl relative">Revista Nacional
+            <span class="absolute bg-white w-[1px] h-[20px] -left-5 block"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container grid grid-cols-2 mb-10">
+    <div class="space-y-10 self-end bg-[url('img/padrao.svg')] bg-no-repeat bg-cover w-full h-full flex flex-col justify-end">
+      <h2 class="text-6xl font-serif font-semibold">Refúgio Natural</h2>
+      <ul class="space-y-5 *:before:w-8 *:before:h-[3px] *:rounded-full *:before:bg-verde-200 *:before:block *:flex *:items-center *:gap-4 *:text-3xl">
+        <li>Experimente a natureza de perto</li>
+        <li>Conecte-se com a natureza</li>
+        <li>Desconecte-se do digital</li>
+        <li>Observe a vida selvagem</li>
+        <li>Escolha a sua cabine preferida</li>
+      </ul>
+    </div>
+    <div class="grid grid-cols-[2fr_1fr] gap-8 row-auto">
+      <div class="col-span-3 relative">
+        <img src="img/casa1.jpg" alt="" class="h-52 w-full object-cover rounded-xl">
+        <span class="absolute right-2 top-2 py-1 px-4 bg-[rgba(0,0,0,0.5)] rounded-xl uppercase">Ruby</span>
+      </div>
+      <div class="relative">
+        <img src="img/casa2.jpg" alt="" class="h-full object-cover rounded-xl">
+        <span class="absolute right-2 top-2 py-1 px-4 bg-[rgba(0,0,0,0.5)] rounded-xl uppercase">Emerald</span>
+      </div>
+      <div class="col-span-2 relative">
+        <img src="img/casa3.jpg" alt="" class="h-full object-cover w-full rounded-xl">
+        <span class="absolute right-2 top-2 py-1 px-4 bg-[rgba(0,0,0,0.5)] rounded-xl uppercase">Shapire</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
