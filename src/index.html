@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="./output.css">
 </head>
 
-<body class="bg-verde-800 text-white grid">
+<body class="bg-verde-800 text-white font-sans">
 
-  <div class="container mb-10 max-md:justify-center flex gap-0.5 text-verde-200 *:py-3 *:px-6 *:bg-verde-900 mt-5 text-xl font-light">
+  <div class="container mb-10 max-md:justify-center flex gap-0.5 text-verde-200 *:py-3 *:px-6 *:bg-verde-900 mt-5 text-xl font-light max-[300px]:hidden">
     <div class="rounded-l-[10px] relative flex items-center">
       Segunda
       <span class="size-3 bg-verde-200 rounded-full absolute block -left-1 shadow-2xl shadow-verde-400"></span>
@@ -21,7 +21,9 @@
   </div>
 
   <header class="container mb-8 flex justify-between items-center text-white">
-    <a href="#"><img src="img/forest.svg" alt="forest"></a>
+    <a href="#" class="max-[300px]:mx-auto max-[300px]:mt-5">
+      <img src="img/forest.svg" alt="forest">
+    </a>
     <ul class="flex gap-5 *:*:text-2xl text-gray-200 max-lg:hidden">
       <li><a href="#" class="hover:underline underline-offset-8 p-4">Acomodações</a></li>
       <li><a href="#" class="hover:underline underline-offset-8 p-4">Eventos</a></li>
@@ -31,15 +33,15 @@
   </header>
 
   <section class="container flex flex-col justify-end h-[600px] bg-[url('./img/floresta.jpg')] rounded-2xl bg-center bg-cover p-8 mb-10">
-    <div class="flex self-start items-center gap-10 py-2 px-3 rounded-full bg-verde-950 mb-10">
+    <div class="flex self-start items-center gap-10 py-2 px-3 rounded-full bg-verde-950 mb-10 max-[589px]:hidden">
       <span class="ml-2">vagas para dezembro abertas</span>
       <a href="" class="flex gap-2 py-3 px-6 bg-gradient-to-b from-verde-200 to-verde-400 text-1xl text-verde-900 rounded-3xl">Reserve Hoje <img src="img/seta.svg" alt=""> </a>
     </div>
-    <div class="w-[58ch] max-md:w-[45ch]">
-      <h2 class="text-6xl max-md:text-5xl font-serif break-words mb-10">Venha Experimentar a Vida na Floresta</h2>
+    <div class="w-[58ch] max-md:w-[45ch] max-[452px]:w-[30ch] max-[337px]:w-[20ch]">
+      <h2 class="text-6xl max-[337px]:text-5xl font-serif break-words mb-10">Venha Experimentar a Vida na Floresta</h2>
     </div>
     <div class="flex justify-between items-end">
-      <p>Melhores locais para visitar <a href="#" class="underline p-1">2049</a></p>
+      <p class="max-[589px]:hidden">Melhores locais para visitar <a href="#" class="underline p-1">2049</a></p>
       <div class="flex flex-col">
         <div class="mb-2 uppercase text-2xl max-md:text-sm max-md:font-semibold font-thin">
           <p>Recomendado por</p>
@@ -129,7 +131,7 @@
     </div>
   </section>
 
-  <section class="container grid grid-cols-2 gap-10 max-h-[600px] my-16">
+  <section class="container my-12 sm:my-16 grid sm:grid-cols-2 gap-8">
     <div class="bg-verde-900 p-10 rounded-2xl flex flex-col gap-5">
       <span class="uppercase text-verde-200">Experiências Exclusivas</span>
       <h2 class="capitalize text-5xl font-serif">Escolha sua próxima aventura</h2>
@@ -170,11 +172,11 @@
     </div>
   </section>
 
-  <section class="container grid mt-32 pt-24 max-lg:pt-20 max-lg:mt-0 justify-center bg-[url('./img/padrao.svg')] bg-contain bg-center bg-no-repeat">
-    <span class="uppercase text-verde-200 text-center">Ciclo Natural</span>
+  <section class="container bg-[url('./img/padrao.svg')] bg-contain bg-center bg-no-repeat mb-12 sm:mb-16 sm:py-16">
+    <span class="uppercase text-verde-200 text-center block">Ciclo Natural</span>
     <h2 class="capitalize mb-5 text-6xl font-serif font-bold text-center">Ritmo da Floresta</h2>
     <div class="grid grid-cols-3 gap-10 max-lg:grid-cols-1">
-      <div class="flex flex-col gap-5 bg-verde-900 p-10 rounded-2xl max-h-[300px] transition-transform hover:-translate-y-2">
+      <div class="flex flex-col gap-5 bg-verde-900 p-10 rounded-2xl sm:max-h-[300px] transition-transform hover:-translate-y-2">
         <span class="size-12 bg-gradient-to-b from-verde-200 to-verde-400 flex items-center justify-center rounded-full">
           <img src="img/manha.svg" alt="" class="size-8">
         </span>
@@ -182,7 +184,7 @@
         <p class="text-gray-300">Desperte com o canto dos pássaros e participe das nossas caminhadas ao ar livre.</p>
         <span class="text-verde-200">05:40 - 07:00</span>
       </div>
-      <div class="flex flex-col gap-5 bg-verde-900 p-10 rounded-2xl mt-20 max-lg:mt-0 max-h-[300px] transition-transform hover:-translate-y-2">
+      <div class="flex flex-col gap-5 bg-verde-900 p-10 rounded-2xl mt-20 max-lg:mt-0 sm:max-h-[300px] transition-transform hover:-translate-y-2">
         <span class="size-12 bg-gradient-to-b from-verde-200 to-verde-400 flex items-center justify-center rounded-full">
           <img src="img/dia.svg" alt="" class="size-8">
         </span>
@@ -190,7 +192,7 @@
         <p class="text-gray-300">Explore nossas trilhas sombreadas e desfrute de um piquenique gourmet na natureza.</p>
         <span class="text-verde-200">05:40 - 07:00</span>
       </div>
-      <div class="flex flex-col gap-5 bg-verde-900 p-10 rounded-2xl max-h-[300px] transition-transform hover:-translate-y-2">
+      <div class="flex flex-col gap-5 bg-verde-900 p-10 rounded-2xl sm:max-h-[300px] transition-transform hover:-translate-y-2">
         <span class="size-12 bg-gradient-to-b from-verde-200 to-verde-400 flex items-center justify-center rounded-full">
           <img src="img/noite.svg" alt="" class="size-8">
         </span>
@@ -200,6 +202,87 @@
       </div>
     </div>
   </section>
+
+  <section class="container grid grid-cols-2 max-lg:grid-cols-1 mb-12">
+    <div class="flex flex-col max-lg:mb-12">
+      <h3 class="font-serif text-verde-300 text-5xl mb-8">Nossos Contatos</h3>
+      <p class="text-gray-300 mb-2">Tem interesse em passar uma temporada na Forest?</p>
+      <p class="text-gray-300 mb-10">Entre em contato com a gente por telefone ou email.</p>
+      <ul class="space-y-8">
+        <li>
+          <h4 class="text-2xl font-serif text-verde-300 mb-2 before:w-5 before:h-0.5 before:block before:bg-verde-200 before:mb-0.5">Base</h4>
+          <span class="text-gray-300">Rua da Mata, 123 - Floresta Nacional - RJ</span>
+        </li>
+        <li>
+          <h4 class="text-2xl font-serif text-verde-300 mb-2 before:w-5 before:h-0.5 before:block before:bg-verde-200 before:mb-0.5">Email</h4>
+          <span class="text-gray-300">contato@forest.com</span>
+        </li>
+        <li>
+          <h4 class="text-2xl font-serif text-verde-300 mb-2 before:w-5 before:h-0.5 before:block before:bg-verde-200 before:mb-0.5">Telefone</h4>
+          <span class="text-gray-300">47 99999-9999</span>
+        </li>
+      </ul>
+    </div>
+
+    <form action="" class="grid grid-cols-2 gap-4 bg-verde-900 rounded-lg shadow-2xl p-4 lg:p-8">
+      <div class="grid gap-2 col-span-2">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="nome" class="h-12 p-4 rounded-lg bg-verde-800 focus:outline-none focus:ring-2 focus:ring-verde-400">
+      </div>
+      <div class="grid gap-2 max-sm:col-span-2">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" class="h-12 p-4 rounded-lg bg-verde-800 focus:outline-none focus:ring-2 focus:ring-verde-400">
+      </div>
+      <div class="grid gap-2 max-sm:col-span-2">
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" name="telefone" placeholder="(47) 00000-0000" class="h-12 p-4 rounded-lg bg-verde-800 placeholder:text-verde-950 placeholder:font-thin focus:outline-none focus:ring-2 focus:ring-verde-400">
+      </div>
+      <div class="grid gap-2 col-span-2">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" class="h-36 p-4 rounded-lg bg-verde-800 resize-none focus:outline-none focus:ring-2 focus:ring-verde-400"></textarea>
+      </div>
+      <input type="submit" value="Enviar Email" class="bg-gradient-to-b from-verde-200 to-verde-400 place-self-start px-6 py-3 rounded-3xl text-black cursor-pointer">
+    </form>
+  </section>
+
+  <section class="container flex gap-20 justify-center flex-wrap py-16 mb-16 border-t border-b border-verde-950">
+    <img src="img/parceiros/caravan.svg" alt="parceiro caravan">
+    <img src="img/parceiros/dogs.svg" alt="parceiro dogs">
+    <img src="img/parceiros/wildbeast.svg" alt="parceiro wildbeast">
+    <img src="img/parceiros/lescone.svg" alt="parceiro lescone">
+    <img src="img/parceiros/surfbot.svg" alt="parceiro surfbot">
+  </section>
+
+  <footer class="container pb-8">
+    <div class="bg-verde-900 grid gap-8 lg:grid-cols-2 mb-8 rounded-2xl p-6 sm:p-12">
+      <div class="flex gap-12 max-sm:flex-col max-sm:gap-4">
+        <div>
+          <h3 class="text-white font-serif text-xl mb-4">Endereço</h3>
+          <p class="text-gray-400">
+            Rua da Mata, 123<br>Floresta Nacional<br>Rio de Janeiro, RJ
+          </p>
+        </div>
+        <div>
+          <h3 class="text-white font-serif text-xl mb-4">Contato</h3>
+          <p class="text-gray-400">
+            contato@forest.com<br>+55 21 9999-9999
+          </p>
+        </div>
+      </div>
+      <div class="lg:justify-self-end">
+        <img class="mb-4" src="./img/forest.svg" alt="Forest">
+        <p class="text-gray-400">Conecte-se com a natureza</p>
+      </div>
+    </div>
+    <div class="text-gray-400 flex items-center justify-between gap-8 text-sm max-sm:flex-col-reverse">
+      <p>© 2024 Forest. Todos os direitos reservados.</p>
+      <ul class="flex gap-8">
+        <li><a class="hover:text-verde-300" href="#">Instagram</a></li>
+        <li><a class="hover:text-verde-300" href="#">LinkedIn</a></li>
+        <li><a class="hover:text-verde-300" href="#">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 
